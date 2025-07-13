@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexCo | Advanced Completion Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --dark: #1f3b4d;
+      --light: #1b2e38;
+      --white: #ffffff;
+      --accent: #52ab98;
+      --muted: #c8d8e4;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light);
+      color: var(--white);
+      line-height: 1.6;
+    }
+    header {
+      background: url('https://wallpapercave.com/wp/wp7902106.jpg') center/cover no-repeat;
+      padding: 6rem 2rem;
+      text-align: center;
+      background-blend-mode: multiply;
+      background-color: rgba(31, 59, 77, 0.75);
+      color: var(--white);
+      animation: fadeInHeader 2s ease-in-out;
+    }
+    header h1 {
+      font-size: 3.2rem;
+      animation: fadeInDown 1.2s ease-out;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      animation: fadeInUp 1.4s ease-out;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      animation: fadeInUp 1.6s ease-out;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #3c8d7c;
+    }
+    section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      animation: fadeInSection 1.5s ease;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      color: var(--accent);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .services ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      list-style: none;
+    }
+    .services li {
+      background: #243b4a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: zoomIn 0.8s ease;
+    }
+    .services li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+    footer {
+      background: var(--dark);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes zoomIn {
+      0% { transform: scale(0.95); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes fadeInSection {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInHeader {
+      0% { opacity: 0; transform: scale(1.02); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NexCo</h1>
+    <p>Smarter Commissioning. Seamless Completions.</p>
+    <a href="#contact" class="btn">Let's Work Together</a>
+  </header>
+
+  <section>
+    <h2 class="section-title">Our Core Services</h2>
+    <div class="services">
+      <ul>
+        <li><strong>Systemisation & Tagging</strong><br>Breakdown of asset register into systems & subsystems for structured completions tracking.</li>
+        <li><strong>Inspection & Test Records (ITRs)</strong><br>Upload/create mechanical and electrical ITRs in Hexagon Smart Completions for execution & signoff.</li>
+        <li><strong>Punchlist Management</strong><br>Log, track, assign, and close-out site punch items with live reporting dashboards and mobile workflows.</li>
+        <li><strong>Pre-Commissioning & Commissioning</strong><br>Execution of static and dynamic test procedures in the field, with traceable reporting.</li>
+        <li><strong>Turnover & Handover Packages</strong><br>Digital generation of fully traceable and signed-off completions dossiers ready for handover.</li>
+        <li><strong>Field Mobility Tools</strong><br>Mobile-ready tools to execute, sign-off, and report field activities in real time.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Templates & Tools We Provide</h2>
+    <div class="services">
+      <ul>
+        <li><strong>Commissioning Plan</strong><br>Project-specific plans tailored for site execution, MC/ITR workflow, and compliance tracking.</li>
+        <li><strong>ITR Templates</strong><br>Customised ITR libraries aligned to discipline, client standards, and regulatory needs.</li>
+        <li><strong>Punchlist Workflow Setup</strong><br>Preconfigured punchlist workflows, mobile capture forms, and completion gates.</li>
+        <li><strong>Turnover Package Generator</strong><br>Auto-generates handover packs with tag lists, signed ITRs, punch closeout, and certification.</li>
+        <li><strong>Document Register System</strong><br>Live updating registers for all completions-related documents with version control.</li>
+        <li><strong>Prestart & Risk Templates</strong><br>Custom field-ready forms: Prestart checklists, risk assessments, and isolation verifications.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Platforms We Work With</h2>
+    <div class="services">
+      <ul>
+        <li><strong>Hexagon Smart Completions</strong><br>Tag-centric completions system with ITR, punchlist, and turnover automation.</li>
+        <li><strong>Omega 365 Completions</strong><br>Integrated workpacks, MC dossiers, and commissioning systems.</li>
+        <li><strong>ProCoSys / Pims Completion</strong><br>Cloud-based completions for offshore projects and vendor tracking.</li>
+        <li><strong>Custom-Built Solutions</strong><br>We support spreadsheet-based or SharePoint completions when legacy systems are used.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Sectors We Support</h2>
+    <ul class="services">
+      <li>Oil & Gas (Upstream / Midstream / LNG)</li>
+      <li>Mining & Resources (Iron Ore, Lithium, Gold)</li>
+      <li>Energy Transition (Hydrogen, Renewables)</li>
+      <li>Infrastructure, Water & Utilities</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact NexCo</h2>
+    <p style="text-align:center; font-size: 1.1rem;">
+      📞 +61 429 503 85<br>
+      📧 michael@nexco.com.au<br>
+      📍 Based in Western Australia
+    </p>
+  </section>
+
+  <footer>
+    ABN: [Insert ABN Here] • © 2025 NexCo — Smarter Commissioning, Seamless Handover
+  </footer>
+</body>
+</html>
